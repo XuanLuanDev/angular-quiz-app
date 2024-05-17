@@ -1,0 +1,52 @@
+[
+    {
+        "title":"What is a key characteristic of specification-based testing techniques?",
+        "options":[
+             "Tests are derived from information about how the software is constructed.",
+             "Tests are derived from models (formal or informal) that specify the problem to be solved by the software or its components.",
+             "Tests are derived based on the skills and experience of the tester.",
+             "Tests are derived from the extent of the coverage of structural elements of the system or components."
+        ],
+        "answer":""
+    },
+    {
+        "title":"An exhaustive test suite would include:",
+        "options":[
+             "All combinations of input values and preconditions.",
+             "All combinations of input values and output values.",
+             "All pairs of input value and preconditions.",
+             "All states and state transitions."
+        ],
+        "answer":""
+    },
+    {
+        "title":"Which statement about testing is true?",
+        "options":[
+             "Testing is started as early as possible in the life cycle.",
+             "Testing is started after the code is written so that we have a system with which to work.",
+             "Testing is most economically done at the end of the life cycle.",
+             "Testing can only be done by an independent test team."
+        ],
+        "answer":""
+    },
+    {
+        "title":"For a test procedure that is checking modifications of customers on a database, which two steps below would be the lowest priority if we didn’t have time to execute all of the steps?<br/>1 Open database and confirm existing customer<br/>2 Change customer’s marital status from single to married<br/>3 Change customer’s street name from Parks Road to Park Road<br/>4 Change customer’s credit limit from 500 to 750<br/>5 Replace customer’s first name with exactly the same first name<br/>6 Close the customer record and close the database<br/>",
+        "options":[
+             "Tests 1 and 4",
+             "Tests 2 and 3",
+             "Tests 5 and 6",
+             "Tests 3 and 5"
+        ],
+        "answer":""
+    },
+    {
+        "title":"Consider the following list of either product or project risks<br/>I An incorrect calculation of fees might shortchange the organization.<br/>II A vendor might fail to deliver a system component on time.<br/>III A defect might allow hackers to gain administrative privileges.<br/>IV A skills gap might occur in a new technology used in the system.<br/>V A defect-prioritization process might overload the development team.<br/> Which of the following statements is true?",
+        "options":[
+             "I is primarily a product risk and II, III, IV and V are primarily project risks.",
+             "II and V are primarily product risks and I, III and V are primarily project risks.",
+             "I and III are primarily product risks, while II, IV and V are primarily project risks.",
+             "Ill and V are primarily product risks, while I, II and IV are primarily project risks."
+        ],
+        "answer":""
+    }
+]

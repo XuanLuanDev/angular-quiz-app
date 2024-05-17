@@ -1,0 +1,73 @@
+<div class="row" *ngIf="mode == 1">
+    <div class="container d-flex align-items-center justify-content-center start-screen">
+        <div class="container">
+            <h3 class="text-center">{{'setting_quiz' | translate}}</h3>
+            <div class="row mt-10">
+                <div class="col-auto">{{'category' | translate}}</div>
+                <div class="col">
+                  <select class="form-select" [(ngModel)]="category">
+                    <option *ngFor="let cat of categories" [value]="cat.path">{{cat.title}}</option>
+                  </select>
+                </div>
+              
+            </div>
+            <div class="row mt-10">
+                <div class="col-auto">{{'question_num' | translate}}</div>
+                <div class="col">
+                    <input type="number" [(ngModel)]="numOfQuestion" (change)="changeNum($event)" min="0" [attr.max]="datas.length">
+                </div>
+              
+            </div>
+            <div class="row mt-10">
+                <div class="col-12 text-center">
+                    <button class="btn-common" (click)="start()">{{'start' | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
+
+<div class="row"  *ngIf="mode == 2">
+    <div class="col-12">
+        <div class="float-end">
+            <button class="btn-common" (click)="prev()" [disabled]="from == 0">{{'prev' | translate}}</button>&nbsp;
+            <button class="btn-common" (click)="next()" [disabled]="limit >= numOfQuestion">{{'next' | translate}}</button>&nbsp;
+            <button class="btn-common" (click)="end()">{{'end' | translate}}</button>
+        </div>
+      
+    </div>
+    <div class="col-12 row  mt-10"  *ngFor="let q of questions  | slice:from:limit;let i=index">
+        <h3 class="question-title" [innerHtml]="(from + i + 1) +'. '+q.title"></h3>
+        <div class="col-6" *ngFor="let opt of q.options">
+            <div class="choise-option" [ngClass]="{'select-opt':answers[from + i].value == opt}" (click)="selectOption(q,opt)">
+                <span>  {{opt}}</span>
+            </div>
+        
+        </div>
+          
+    </div>
+</div>
+
+<div class="row" *ngIf="mode == 3">
+    <div class="col-12">
+        <div class="float-end">
+            <button class="btn-note-correct"></button>&nbsp;{{'correct' | translate}}&nbsp;
+            <button class="btn-note-incorrect"></button>&nbsp;{{'incorrect' | translate}}&nbsp;
+            <button class="btn-common" (click)="start()" >{{'replay' | translate}}</button>&nbsp;
+            <button class="btn-common" (click)="goToSetting()" >{{'setting_quiz' | translate}}</button>&nbsp;
+        </div>
+    </div>
+    <div ngbScrollSpy #spy="ngbScrollSpy" class="bg-light p-3 rounded-2 mb-3" style="height: calc(100vh - 150px)">
+        <div class="row  mt-10"  *ngFor="let q of questions;let i=index">
+            <h3 [innerHtml]="( i + 1) +'. '+q.title" ngbScrollSpyFragment="{{'question'+i}}"></h3>
+            <div class="col-6" >
+                <div class="choise-option" [ngClass]="{'correct-opt':answers[i].value == q.answer,'incorrect-opt':answers[i].value != q.answer}" >
+                    <span>  {{answers[i].value}}</span>
+                </div>
+            
+            </div>
+              
+        </div>
+    </div>
+</div>

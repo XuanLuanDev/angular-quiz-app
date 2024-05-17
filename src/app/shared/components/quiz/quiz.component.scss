@@ -1,0 +1,95 @@
+.start-screen{
+    width: 300px;
+    height: 200px;
+}
+.choise-option{
+    margin: 10px;
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    height: 60px;
+    width: 100%;
+    
+}
+.choise-option:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+.select-opt{
+    background-color: #f05ed0;
+    color: #fff;
+}
+
+.btn-common {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+}
+
+.btn-common:hover {
+  background: #00bd68;
+}
+.btn-common[disabled]{
+    opacity: .5;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.correct-opt{
+    color: #fff;
+}
+.incorrect-opt{
+    color: #fff;
+    background-color: red;
+}
+.btn-note-correct{
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(-180deg, #00D775, #00BD68);
+    border: none;
+}
+.btn-note-incorrect{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: none;
+}
+.question-title {
+    font-size: 20px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+}

@@ -1,1 +1,1 @@
-# angular-quiz-app
+# quiz-app

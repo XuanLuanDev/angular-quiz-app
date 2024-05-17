@@ -1,0 +1,14 @@
+{
+    "home":"Home",
+    "setting_quiz":"Setting Quiz",
+    "question_num":"Number of questions",
+    "start":"Start",
+    "end":"End",
+    "view_result":"View Result",
+    "prev":"Previous",
+    "next":"Next",
+    "replay":"Replay",
+    "correct":"Correct",
+    "incorrect":"Incorrect",
+    "category":"Category"
+}
